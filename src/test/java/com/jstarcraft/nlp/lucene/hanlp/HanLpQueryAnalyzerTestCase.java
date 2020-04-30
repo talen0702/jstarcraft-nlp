@@ -25,7 +25,7 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class HanLpQueryAnalyzerTestCase {
 
@@ -36,7 +36,7 @@ public class HanLpQueryAnalyzerTestCase {
             System.out.print(text.charAt(i) + "" + i + " ");
         }
         System.out.println();
-        try(Analyzer analyzer = new HanLpQueryAnalyzer("viterbi")) {
+        try (Analyzer analyzer = new HanLpQueryAnalyzer("viterbi")) {
             TokenStream tokenStream = analyzer.tokenStream("field", text);
             tokenStream.reset();
             while (tokenStream.incrementToken()) {

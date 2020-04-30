@@ -9,7 +9,7 @@ import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -54,7 +54,7 @@ public abstract class NlpTokenizerTestCase {
                     PositionIncrementAttribute position = segmenter.getAttribute(PositionIncrementAttribute.class);
                     // 词性
                     TypeAttribute type = segmenter.getAttribute(TypeAttribute.class);
-                    LOGGER.debug(StringUtility.format("segmenter:term is {}, begin is {}, end is {}", term, offset.startOffset(), offset.endOffset()));
+                    LOGGER.debug(StringUtility.format("tokenizer:term is {}, begin is {}, end is {}", term, offset.startOffset(), offset.endOffset()));
                     Assert.assertEquals(term.toString().toLowerCase(), text.substring(offset.startOffset(), offset.endOffset()).toLowerCase());
                 }
             }

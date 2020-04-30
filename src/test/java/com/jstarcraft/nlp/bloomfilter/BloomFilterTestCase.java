@@ -1,9 +1,7 @@
 package com.jstarcraft.nlp.bloomfilter;
 
 import org.junit.Assert;
-import org.junit.Test;
-
-import com.jstarcraft.nlp.bloomfilter.BloomFilter;
+import org.junit.jupiter.api.Test;
 
 public abstract class BloomFilterTestCase {
 
@@ -25,5 +23,5 @@ public abstract class BloomFilterTestCase {
         }
         Assert.assertTrue(times < elments * probability);
     }
-    
+
 }

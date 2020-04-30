@@ -1,0 +1,14 @@
+每个国家对应的语言Locale和国家代码对照表:
+https://www.cnblogs.com/jacksoft/p/5771130.html
+
+Java国际化——Locale+数字格式:
+https://blog.csdn.net/PacosonSWJTU/article/details/50634653
+
+详解Java中用于国际化的locale类:
+https://www.jb51.net/article/85858.htm
+
+Java的Locale类:
+https://www.jianshu.com/p/67787f73d21d
+
+Java平台的，Local对象，ResourceBundle对象:
+https://www.jianshu.com/p/3d6e1e92c176

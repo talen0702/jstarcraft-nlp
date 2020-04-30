@@ -8,16 +8,15 @@ import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.jstarcraft.core.utility.StringUtility;
-import com.jstarcraft.nlp.tokenization.NlpTokenizerTestCase;
 
 public abstract class NlpSegmenterFactoryTestCase {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(NlpTokenizerTestCase.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(NlpSegmenterFactoryTestCase.class);
 
     protected abstract NlpSegmentFactory getSegmenterFactory() throws Exception;
 
